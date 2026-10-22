@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this model, please credit it as below (CC BY 4.0)."
+title: "Rigged African Elephant Bull for Blender"
+type: dataset
+abstract: >-
+  A free, anatomically rigged 3D African bush elephant bull (Loxodonta africana)
+  for Blender, with a 107-joint skeleton and 5 science-based animations:
+  idle, walk, run, eating and threat & charge.
+authors:
+  - name: "AnimalAnimator"
+    website: "https://animalanimator.com/"
+version: "3.0"
+date-released: 2026-10-22
+license: CC-BY-4.0
+url: "https://animalanimator.com/the-ultimate-african-elephant-for-animal-animators/"
+repository-code: "https://github.com/animalanimator/african-elephant-rig-blender"
+keywords:
+  - african elephant
+  - Loxodonta africana
+  - 3D model
+  - Blender
+  - rigging
+  - animal animation
+  - walk cycle
+  - biomechanics

@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Rigged African Elephant 3D Model for Blender (5 Animations)</title>
+  <meta name="description" content="Free rigged African elephant bull for Blender: 107-joint anatomical rig, 8K PBR textures and 5 science-based animations (walk, run, idle, eating, charge). CC BY 4.0.">
+  <link rel="canonical" href="https://animalanimator.github.io/african-elephant-rig-blender/">
+  <meta name="author" content="AnimalAnimator.com">
+  <meta name="theme-color" content="#0f0d0b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AnimalAnimator">
+  <meta property="og:title" content="Free Rigged African Elephant for Blender: 107 Joints, 5 Animations">
+  <meta property="og:description" content="An anatomically rigged African elephant bull with science-based walk, run, idle, eating and charge animations. Free under CC BY 4.0.">
+  <meta property="og:url" content="https://animalanimator.github.io/african-elephant-rig-blender/">
+  <meta property="og:image" content="https://animalanimator.github.io/african-elephant-rig-blender/images/social-preview.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Rigged 3D African elephant bull for Blender by AnimalAnimator.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="video/african-elephant-walk-loop-poster.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "3DModel",
+        "@id": "https://animalanimator.github.io/african-elephant-rig-blender/#model",
+        "name": "Rigged African Elephant Bull for Blender",
+        "description": "A free, anatomically rigged 3D African bush elephant bull (Loxodonta africana) with a 107-joint skeleton, 8K PBR textures and 5 science-based animations: idle, walk, run, eating and threat and charge.",
+        "url": "https://animalanimator.github.io/african-elephant-rig-blender/",
+        "image": [
+          "https://animalanimator.github.io/african-elephant-rig-blender/images/social-preview.jpg",
+          "https://animalanimator.github.io/african-elephant-rig-blender/images/elephant-rig-107-joints-diagram.webp"
+        ],
+        "encodingFormat": ["application/x-blender", "model/gltf-binary"],
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "keywords": "african elephant 3d model, rigged elephant, blender elephant rig, elephant walk cycle, animal animation, Loxodonta africana",
+        "creator": { "@type": "Organization", "name": "AnimalAnimator", "url": "https://animalanimator.com/" },
+        "sameAs": [
+          "https://github.com/animalanimator/african-elephant-rig-blender",
+          "https://sketchfab.com/3d-models/african-elephant-bull-rigged-animated-436483857ce84c77bd0f6c76fb3d4d2d"
+        ],
+        "subjectOf": {
+          "@type": "Article",
+          "name": "The Ultimate African Elephant for Animal Animators",
+          "url": "https://animalanimator.com/the-ultimate-african-elephant-for-animal-animators/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is the rigged African elephant really free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Blender file and the GLB export are free to download under the Creative Commons Attribution 4.0 license. You only need to credit AnimalAnimator.com with a link." } },
+          { "@type": "Question", "name": "Can I use the elephant in a commercial game or film?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. CC BY 4.0 allows commercial use and changes, as long as you credit: African Elephant Bull 3D model by AnimalAnimator.com (https://animalanimator.com), licensed under CC BY 4.0." } },
+          { "@type": "Question", "name": "Which Blender version do I need?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The file was made in Blender 5.1. Use Blender 5.1 or newer. For other software, use the included GLB file." } },
+          { "@type": "Question", "name": "Does the elephant work in Unity, Unreal Engine or Godot?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Import the GLB file. The five animations come in as named clips, and the corrective and soft-tissue joints are baked into them, so the legs keep their volume in any engine." } },
+          { "@type": "Question", "name": "Are the elephant animations based on real data?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. The gait timing, speeds, duty factors, joint angles and behaviours come from published studies of African and Asian elephants, such as Hutchinson et al. 2003 and 2006, Ren et al. 2008 and 2010 and Genin et al. 2010." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="https://animalanimator.com/" title="AnimalAnimator.com: creature animation and animal references">
+        <img src="favicon.svg" width="30" height="30" alt="">
+        <span>Animal<b>Animator</b></span>
+      </a>
+      <nav aria-label="Sections">
+        <a href="#viewer">3D view</a>
+        <a href="#animations">Animations</a>
+        <a href="#rig">Rig</a>
+        <a href="#use">How to use</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-sm" href="https://github.com/animalanimator/african-elephant-rig-blender/releases/latest">Download</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <p class="pill"><span class="dot"></span> Free Blender model · CC BY 4.0</p>
+          <h1>Rigged African Elephant Bull <span class="grad">for Blender</span></h1>
+          <p class="lead">An anatomically rigged African bush elephant (<i>Loxodonta africana</i>) with a 107-joint skeleton and five animations built from real elephant biomechanics. Made for animators, riggers and game developers by <a href="https://animalanimator.com/">AnimalAnimator.com</a>.</p>
+          <div class="cta">
+            <a class="btn" href="https://github.com/animalanimator/african-elephant-rig-blender/releases/latest">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+              Download the .blend
+            </a>
+            <a class="btn btn-ghost" href="https://animalanimator.com/the-ultimate-african-elephant-for-animal-animators/">Read the elephant guide for animators</a>
+          </div>
+          <p class="fine">Includes a game-ready <b>.glb</b> for Unity, Unreal and Godot · Blender 5.1+</p>
+        </div>
+        <figure class="hero-media">
+          <div class="frame">
+            <video id="hero-video" src="video/african-elephant-walk-loop.mp4" poster="video/african-elephant-walk-loop-poster.webp" width="1280" height="720" autoplay muted loop playsinline aria-label="3D African elephant bull walking: the lateral-sequence walk cycle from the Blender file"></video>
+          </div>
+          <figcaption><span class="tag">02_Walk</span> Lateral-sequence walk, rendered from the Blender file</figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <ul class="stats" aria-label="Key numbers">
+          <li><b>107</b><span>anatomical joints</span></li>
+          <li><b>5</b><span>science-based animations</span></li>
+          <li><b>85.7k</b><span>triangles</span></li>
+          <li><b>8K</b><span>PBR skin texture</span></li>
+          <li><b>3.2 m</b><span>real shoulder height</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3D VIEWER -->
+    <section id="viewer" class="section">
+      <div class="wrap">
+        <p class="kicker">Explore it in 3D</p>
+        <h2>Turn the elephant around before you download</h2>
+        <p class="sub">The interactive viewer plays all five animations. Drag to orbit, scroll to zoom, and pick a clip from the animation menu at the bottom.</p>
+        <div class="viewer" id="sketchfab" data-uid="436483857ce84c77bd0f6c76fb3d4d2d">
+          <img src="images/african-elephant-for-animators-featured.webp" width="1200" height="630" loading="lazy" alt="3D African elephant bull walking on a dusty floor, preview of the interactive Sketchfab viewer">
+          <button class="play" type="button" aria-label="Load the interactive 3D viewer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            <span>Load the interactive 3D viewer</span>
+          </button>
+        </div>
+        <p class="note">Viewer by Sketchfab. <a href="https://sketchfab.com/3d-models/african-elephant-bull-rigged-animated-436483857ce84c77bd0f6c76fb3d4d2d">Open the African Elephant Bull on Sketchfab</a>.</p>
+      </div>
+    </section>
+
+    <!-- ANIMATIONS -->
+    <section id="animations" class="section band">
+      <div class="wrap">
+        <p class="kicker">5 science-based animations</p>
+        <h2>Every clip comes from how real elephants move</h2>
+        <p class="sub">Speeds, footfall timing, joint angles and behaviours come from published locomotion and behaviour studies. All clips run at 30 fps, in place, as seamless loops.</p>
+
+        <div class="anim">
+          <div class="anim-player">
+            <div class="frame">
+              <video id="anim-video" src="video/african-elephant-idle-loop.mp4" poster="video/african-elephant-idle-loop-poster.webp" width="1280" height="720" muted loop playsinline preload="none" aria-label="Selected African elephant animation clip"></video>
+            </div>
+
+            <div class="anim-panel" role="tabpanel" id="p-idle" aria-labelledby="t-idle">
+              <h3>Idle: standing rest</h3>
+              <p>The bull shifts his weight slowly from side to side and rests a hind foot on its toe. He gives two slow ear flaps, the way elephants dump heat through their ears. The trunk tip lifts and sniffs while its two fingers work. Tail swishes, blinks, a slow breath and a little chewing complete the loop.</p>
+              <p class="sci">Based on: Buss &amp; Estes 1971; Phillips &amp; Heath 1992 (ear flapping and heat exchange).</p>
+            </div>
+            <div class="anim-panel" role="tabpanel" id="p-walk" aria-labelledby="t-walk" hidden>
+              <h3>Walk: the lateral-sequence walk</h3>
+              <p>Hind foot, then the fore foot on the same side, at about 1.25 m/s with a 1.8 s stride. The feet land slightly heel-first, roll over the pad and swing forward on smooth arcs with no sliding. In swing, the wrist flexes about 75°, so the front sole turns backward. The legs are compliant, so the back rocks less, the shoulder blades glide and the muscles bulge on every step.</p>
+              <p class="sci">Based on: Hutchinson et al. 2006; Ren et al. 2008, 2010; Genin et al. 2010.</p>
+            </div>
+            <div class="anim-panel" role="tabpanel" id="p-run" aria-labelledby="t-run" hidden>
+              <h3>Run: "grounded running"</h3>
+              <p>Elephants never gallop and never leave the ground. At about 4 m/s (14 km/h) they keep four evenly spaced footfalls, but their legs bounce like springs. The hindquarters compress more than the forequarters, so the back rocks fore and aft while the centre of mass moves only about 1 cm. The head nods with each forefoot impact, and the ears flap with the stride.</p>
+              <p class="sci">Based on: Hutchinson et al. 2003, 2006; Ren &amp; Hutchinson 2008; Genin et al. 2010.</p>
+            </div>
+            <div class="anim-panel" role="tabpanel" id="p-eat" aria-labelledby="t-eat" hidden>
+              <h3>Eating: grazing with trunk and foot</h3>
+              <p>The trunk wraps its tip around a grass tuft while the right forefoot kicks it loose with the toenails, a typical elephant feeding move. After a twist and pull, the trunk curls from the tip and lifts the food in front of the lowered lip. It slides into the mouth between the tusks, then the bull chews with the elephant's fore-and-aft power stroke.</p>
+              <p class="sci">Every frame was checked for trunk–jaw and trunk–tusk intersections.</p>
+            </div>
+            <div class="anim-panel" role="tabpanel" id="p-charge" aria-labelledby="t-charge" hidden>
+              <h3>Threat display and charge</h3>
+              <p>First the threat: head up, ears spread wide, trunk raised and a head shake that slaps the ears. Then a serious charge, with ears pinned, trunk curled under for protection and the tusks forward. Two driving forefoot steps and a lunge end in an upward tusk thrust, and the bull backs up to his start stance.</p>
+              <p class="sci">Based on: Poole &amp; Granli 2011, ElephantVoices <i>Elephant Ethogram</i>; Poole 1987 (musth).</p>
+            </div>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Choose an animation">
+            <button role="tab" id="t-idle" aria-controls="p-idle" aria-selected="true" data-src="video/african-elephant-idle-loop.mp4" data-poster="video/african-elephant-idle-loop-poster.webp">
+              <span class="n">01</span><span class="t">Idle<small>Standing rest · 10 s</small></span>
+            </button>
+            <button role="tab" id="t-walk" aria-controls="p-walk" aria-selected="false" tabindex="-1" data-src="video/african-elephant-walk-loop.mp4" data-poster="video/african-elephant-walk-loop-poster.webp">
+              <span class="n">02</span><span class="t">Walk<small>2 strides · 3.6 s</small></span>
+            </button>
+            <button role="tab" id="t-run" aria-controls="p-run" aria-selected="false" tabindex="-1" data-src="video/african-elephant-run-amble-loop.mp4" data-poster="video/african-elephant-run-amble-loop-poster.webp">
+              <span class="n">03</span><span class="t">Run<small>Grounded running · 1.7 s</small></span>
+            </button>
+            <button role="tab" id="t-eat" aria-controls="p-eat" aria-selected="false" tabindex="-1" data-src="video/african-elephant-eating-trunk-to-mouth.mp4" data-poster="video/african-elephant-eating-trunk-to-mouth-poster.webp">
+              <span class="n">04</span><span class="t">Eating<small>Trunk to mouth · 10 s</small></span>
+            </button>
+            <button role="tab" id="t-charge" aria-controls="p-charge" aria-selected="false" tabindex="-1" data-src="video/african-elephant-threat-and-charge.mp4" data-poster="video/african-elephant-threat-and-charge-poster.webp">
+              <span class="n">05</span><span class="t">Threat &amp; charge<small>Display and attack · 6 s</small></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIG -->
+    <section id="rig" class="section">
+      <div class="wrap">
+        <p class="kicker">Inside the rig</p>
+        <h2>107 joints that follow elephant anatomy</h2>
+        <p class="sub">The skeleton follows elephant bones: a long thorax with tall withers, a short neck, a massive skull and columnar legs on fat-padded feet. Helper and soft-tissue joints keep the skin believable when the legs bend.</p>
+
+        <button class="shot wide" type="button" data-full="images/elephant-rig-107-joints-diagram.webp" data-caption="The rig: 107 joints. Pelvis root, four spine and two neck segments, a 16-bone trunk with two fingers, ears with a hinge and three fans each, an 18-joint face, columnar limbs, 12 helpers and 8 soft-tissue joints.">
+          <img src="images/elephant-rig-107-joints-diagram.webp" width="1600" height="900" loading="lazy" alt="African elephant 3D rig diagram with 107 labelled joints: spine, trunk, ears, face, legs, helpers and soft-tissue joints">
+        </button>
+
+        <ul class="cards">
+          <li><b>Trunk · 18 joints</b><span>16 segments that shorten toward the tip, plus the dorsal and ventral "fingers" of the African trunk.</span></li>
+          <li><b>Ears · 20 joints</b><span>A hinge root and three fans of three segments on each side for flapping, spreading and pinning back.</span></li>
+          <li><b>Face · 18 joints</b><span>Jaw, 2-part tongue, pointed lower lip, mouth corners, cheeks, eyes, lids, brows and musth glands.</span></li>
+          <li><b>Spine and neck</b><span>Pelvis root, four thoracolumbar and two cervical segments, skull, and a belly bone for breathing and sway.</span></li>
+          <li><b>Columnar legs</b><span>Scapula, humerus, forearm and manus at the front; femur, tibia and pes at the back.</span></li>
+          <li><b>12 corrective joints</b><span>Shoulder, elbow, carpus, hip, knee and tarsus, each driven at half its joint's angle to keep volume.</span></li>
+          <li><b>8 soft-tissue joints</b><span>Triceps and hamstrings that bulge and wobble, and four foot cushions that squash and spread.</span></li>
+          <li><b>Tail · 8 joints</b><span>Eight caudal segments for swishes, follow-through and the raised tail of the run.</span></li>
+        </ul>
+
+        <div class="gallery">
+          <button class="shot" type="button" data-full="images/elephant-weight-painting-map.webp" data-caption="Weight painting by anatomy. Each colour is one bone. The ears, face and legs each have their own territory, blended by harmonic fields.">
+            <img src="images/elephant-weight-painting-map.webp" width="1600" height="900" loading="lazy" alt="African elephant 3D model coloured by bone weights in three views">
+            <span class="cap"><b>Skin weights.</b> Harmonic, anatomy-driven, with at most 4 bones per vertex.</span>
+          </button>
+          <button class="shot" type="button" data-full="images/elephant-soft-tissue-muscles-pads.webp" data-caption="Soft tissue: triceps and hamstrings shorten and bulge under load and wobble after each footfall. The digital cushions squash and spread. Twelve half-angle helpers keep joint volume.">
+            <img src="images/elephant-soft-tissue-muscles-pads.webp" width="1600" height="900" loading="lazy" alt="Elephant model highlighting muscle, foot cushion and helper joint weights">
+            <span class="cap"><b>Soft tissue.</b> Muscles bulge and wobble; the foot cushions squash on every step.</span>
+          </button>
+          <button class="shot" type="button" data-full="images/elephant-trunk-ik-eating-fix.webp" data-caption="The trunk: sixteen segments solved against the lips, jaw and tusks, so the tip slides into the mouth over the lowered lip instead of passing through the jaw.">
+            <img src="images/elephant-trunk-ik-eating-fix.webp" width="1600" height="900" loading="lazy" alt="Elephant trunk bones and a before and after comparison of the eating pose">
+            <span class="cap"><b>The trunk.</b> The tip reaches the mouth without passing through the jaw.</span>
+          </button>
+          <button class="shot" type="button" data-full="images/elephant-ears-face-secondary-motion.webp" data-caption="Ears and face: spread for the threat, flapped to cool, pinned back for the charge. Springs add the follow-through.">
+            <img src="images/elephant-ears-face-secondary-motion.webp" width="1600" height="900" loading="lazy" alt="African elephant ears folded and spread with the ear bones shown">
+            <span class="cap"><b>Ears and face.</b> Spread, flapped and pinned, with spring follow-through.</span>
+          </button>
+          <button class="shot" type="button" data-full="images/elephant-columnar-limbs-foot-swing.webp" data-caption="Columnar legs: seen from the front, the leg bones stack into near-vertical columns, and each foot swings on a smooth arc.">
+            <img src="images/elephant-columnar-limbs-foot-swing.webp" width="1600" height="900" loading="lazy" alt="Front view of the elephant leg bones next to a chart of foot swing arcs">
+            <span class="cap"><b>Columnar legs.</b> Smooth foot arcs with no snapping or ground dips.</span>
+          </button>
+          <button class="shot" type="button" data-full="images/elephant-compliant-spine-girdles.webp" data-caption="A compliant back: hip and shoulder heights over two strides. The back bobs a third less in the walk and half as much in the run, matching real elephants.">
+            <img src="images/elephant-compliant-spine-girdles.webp" width="1600" height="900" loading="lazy" alt="Elephant rig in a running pose next to charts of hip and shoulder height">
+            <span class="cap"><b>A compliant back.</b> Low centre-of-mass motion, as measured in real elephants.</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section band">
+      <div class="wrap">
+        <p class="kicker">From concept to animation</p>
+        <h2>How the elephant was made</h2>
+        <p class="sub">Eight steps took the bull from one concept image to a rigged, animated model. <a href="https://animalanimator.com/the-ultimate-african-elephant-for-animal-animators/">The full guide</a> explains each one.</p>
+      </div>
+      <ol class="strip" aria-label="Production steps">
+        <li><img src="images/process-01-concept.webp" width="1200" height="750" loading="lazy" alt="Concept image of a full-body African elephant bull on a dark background"><b><i>1</i> Concept</b><span>One full-body image of an adult bull set the tusks, ears and skin folds.</span></li>
+        <li><img src="images/process-02-multiview.webp" width="1200" height="750" loading="lazy" alt="Four turnaround views of the African elephant concept on white"><b><i>2</i> Turnaround</b><span>Front, side, three-quarter and back views locked the proportions.</span></li>
+        <li><img src="images/process-03-head-bust.webp" width="1200" height="750" loading="lazy" alt="Raw and rebuilt 3D head bust of the African elephant"><b><i>3</i> Head bust</b><span>A separate high-detail head, with the trunk and mouth rebuilt.</span></li>
+        <li><img src="images/process-04-unified-skin.webp" width="1200" height="750" loading="lazy" alt="Unified 3D African elephant skin in two views"><b><i>4</i> One skin</b><span>Head and body fused into one watertight skin; the colour re-baked across the seam.</span></li>
+        <li><img src="images/process-05-eyelids.webp" width="1200" height="750" loading="lazy" alt="Before and after close-ups of the rebuilt elephant eyelids"><b><i>5</i> Eyelids</b><span>Smooth almond rims around the eyeballs for clean close-ups.</span></li>
+        <li><img src="images/process-06-retopology.webp" width="1200" height="750" loading="lazy" alt="Wireframe and textured close-ups of the elephant head"><b><i>6</i> Retopology</b><span>Quad topology with loops around the eyes, 8K colour and 4K normal maps.</span></li>
+        <li><img src="images/process-07-rig-weights.webp" width="1200" height="750" loading="lazy" alt="African elephant rig bones and weight painting in three-quarter view"><b><i>7</i> Rig and weights</b><span>107 joints and harmonic skin weights, built with Python tools in Blender.</span></li>
+        <li><img src="images/process-08-animation.webp" width="1200" height="750" loading="lazy" alt="Six stills from the five African elephant animations"><b><i>8</i> Animation</b><span>Five clips generated from locomotion and behaviour papers, checked frame by frame.</span></li>
+      </ol>
+    </section>
+
+    <!-- USE -->
+    <section id="use" class="section">
+      <div class="wrap use">
+        <div>
+          <p class="kicker">Download and use</p>
+          <h2>From download to playing animation in a minute</h2>
+          <ol class="steps">
+            <li><b>Download</b> the <code>.blend</code> (and the <code>.glb</code> if you need it) from the <a href="https://github.com/animalanimator/african-elephant-rig-blender/releases/latest">latest GitHub release</a>.</li>
+            <li><b>Open it</b> in Blender 5.1 or newer and press <kbd>Space</kbd> to play.</li>
+            <li><b>Switch clips</b> in <em>Dope Sheet → Action Editor</em>: <code>01_Idle</code>, <code>02_Walk</code>, <code>03_Run</code>, <code>04_Eating</code>, <code>05_Attack</code>.</li>
+            <li><b>Add it to your scene</b> with <em>File → Append</em>, then choose the elephant's collection or objects.</li>
+            <li><b>Game engines:</b> import the <code>.glb</code>. The five clips arrive as named animations.</li>
+          </ol>
+          <div class="cta">
+            <a class="btn" href="https://github.com/animalanimator/african-elephant-rig-blender/releases/latest">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+              Get the files on GitHub
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/animalanimator/african-elephant-rig-blender">View the repository</a>
+          </div>
+        </div>
+
+        <div class="specs-card">
+          <h3>Technical specs</h3>
+          <dl class="specs">
+            <dt>Species</dt><dd>African bush elephant bull, <i>Loxodonta africana</i></dd>
+            <dt>Files</dt><dd><code>.blend</code> (Blender 5.1) and <code>.glb</code> (glTF 2.0)</dd>
+            <dt>Mesh</dt><dd>About 85.7k triangles (body 77.8k, eyes 2 × 4.0k)</dd>
+            <dt>Textures</dt><dd>PBR metal/rough: 8K base colour, 4K normal, 4K roughness; 2K eyes</dd>
+            <dt>Rig</dt><dd>107 joints, harmonic skin weights, max 4 per vertex</dd>
+            <dt>Animations</dt><dd>5 clips, 30 fps, in place, seamless loops</dd>
+            <dt>Scale</dt><dd>Real size: 3.2 m at the shoulder, about 6 m long</dd>
+            <dt>License</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, commercial use allowed</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDIT -->
+    <section id="credit" class="section band">
+      <div class="wrap credit">
+        <div>
+          <p class="kicker">Free to use, with credit</p>
+          <h2>Use it anywhere. Just credit AnimalAnimator.</h2>
+          <p class="sub">The model is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>. You can use it in films, games, classes and client work, and you can change it. Please paste this credit, with the link, wherever you show your work.</p>
+        </div>
+        <div class="credit-box">
+          <p id="credit-text">African Elephant Bull 3D model by AnimalAnimator.com (https://animalanimator.com), licensed under CC BY 4.0</p>
+          <button class="btn btn-sm" type="button" id="copy-credit">Copy credit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDE PROMO -->
+    <section class="section">
+      <div class="wrap">
+        <a class="promo" href="https://animalanimator.com/the-ultimate-african-elephant-for-animal-animators/">
+          <img src="images/african-elephant-for-animators-featured.webp" width="1200" height="630" loading="lazy" alt="3D African elephant bull walking, from the guide The Ultimate African Elephant for Animal Animators">
+          <div>
+            <p class="kicker">The full story on AnimalAnimator.com</p>
+            <h2>The Ultimate African Elephant for Animal Animators</h2>
+            <p>Elephant anatomy for riggers, trunk and foot science, gait data, species and ancestors, and the complete step-by-step build of this rig, with interactive tools and 50+ sources.</p>
+            <span class="more">Read the guide →</span>
+          </div>
+        </a>
+
+        <h3 class="rel-title">More animal references and rigging guides</h3>
+        <ul class="related">
+          <li><a href="https://animalanimator.com/blender-rigify-for-rigging-animals-and-making-epic-animations/"><b>Blender Rigify for animals</b><span>Rig quadrupeds and make epic animations</span></a></li>
+          <li><a href="https://animalanimator.com/animal-locomotion-idle-walk-run-jump-animator-controller-unity/"><b>Animal locomotion in Unity</b><span>Idle, walk, run and jump animator controller</span></a></li>
+          <li><a href="https://animalanimator.com/the-animators-menagerie-top-10-land-animals-for-mastering-creature-animation/"><b>The Animator's Menagerie</b><span>Top 10 land animals for creature animation</span></a></li>
+          <li><a href="https://animalanimator.com/the-ultimate-sphinx-cat-reference-for-animal-animators/"><b>Sphinx cat reference</b><span>Anatomy and motion for animators</span></a></li>
+          <li><a href="https://animalanimator.com/the-ultimate-white-shark-anatomy-for-animal-animators/"><b>White shark anatomy</b><span>Swimming and anatomy for animators</span></a></li>
+          <li><a href="https://animalanimator.com/the-ultimate-hummingbird-reference-for-animal-animators/"><b>Hummingbird reference</b><span>Flight and hovering for animators</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section band">
+      <div class="wrap narrow">
+        <p class="kicker">FAQ</p>
+        <h2>Questions about the elephant model</h2>
+        <details>
+          <summary>Is the rigged African elephant really free?</summary>
+          <p>Yes. The Blender file and the GLB export are free to download under the Creative Commons Attribution 4.0 license. You only need to credit AnimalAnimator.com with a link.</p>
+        </details>
+        <details>
+          <summary>Can I use the elephant in a commercial game or film?</summary>
+          <p>Yes. CC BY 4.0 allows commercial use and changes, as long as you give credit. Use the credit line above.</p>
+        </details>
+        <details>
+          <summary>Which Blender version do I need?</summary>
+          <p>The file was made in Blender 5.1. Use Blender 5.1 or newer. For other software, use the included GLB file.</p>
+        </details>
+        <details>
+          <summary>Does the elephant work in Unity, Unreal Engine or Godot?</summary>
+          <p>Yes. Import the GLB file. The five animations come in as named clips, and the corrective and soft-tissue joints are baked into them, so the legs keep their volume in any engine.</p>
+        </details>
+        <details>
+          <summary>Are the elephant animations based on real data?</summary>
+          <p>Yes. The gait timing, speeds, duty factors, joint angles and behaviours come from published studies of African and Asian elephants, such as Hutchinson et al. 2003 and 2006, Ren et al. 2008 and 2010 and Genin et al. 2010. The <a href="https://animalanimator.com/the-ultimate-african-elephant-for-animal-animators/">elephant guide</a> lists all the sources.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <a class="brand" href="https://animalanimator.com/">
+        <img src="favicon.svg" width="26" height="26" alt="">
+        <span>Animal<b>Animator</b></span>
+      </a>
+      <p>3D model and page © AnimalAnimator.com · Model licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+      <nav aria-label="Elsewhere">
+        <a href="https://animalanimator.com/">AnimalAnimator.com</a>
+        <a href="https://github.com/animalanimator/african-elephant-rig-blender">GitHub</a>
+        <a href="https://sketchfab.com/animalanimator">Sketchfab</a>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Enlarged image">
+    <button type="button" class="lb-close" aria-label="Close">×</button>
+    <img src="" alt="">
+    <p></p>
+  </dialog>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
